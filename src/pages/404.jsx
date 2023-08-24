@@ -6,7 +6,7 @@ const PageNotFound = () => {
     <section className='section'>
       <div className='container'>
         <h1 className='text-3xl font-bold'>404</h1>
-        <h2>That page cannot be found!</h2>
+        <h2>That page cannot be found or does not exist!</h2>
         <div className='mt-3'>
           <Link
             href='/'
