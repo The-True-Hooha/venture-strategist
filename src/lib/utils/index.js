@@ -1,4 +1,12 @@
 export function formatDate(dateString, options) {
-  const { format } = new Intl.DateTimeFormat('en-US', options)
-  return format(new Date(dateString))
+  console.log('Received dateString:', dateString);
+
+  const date = new Date(dateString);
+  if (isNaN(date.getTime())) {
+    console.error('Invalid date:', dateString);
+    return '';
+  }
+
+  const { format } = new Intl.DateTimeFormat('en-US', options);
+  return format(date);
 }
